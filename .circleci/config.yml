@@ -1,6 +1,5 @@
 version: 2.1
 jobs:
-  
   build:
     docker:
       - image: circleci/node:10
@@ -9,6 +8,9 @@ jobs:
 
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "91:0a:7d:14:7f:14:c4:09:6e:35:ef:19:44:9c:c1:c4"
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -22,9 +24,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm run test
-  deploy-job:
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "91:0a:7d:14:7f:14:c4:09:6e:35:ef:19:44:9c:c1:c4"
       - run: npm run deploy
