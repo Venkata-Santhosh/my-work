@@ -8,8 +8,8 @@ jobs:
 
     steps:
       - command: |
-        git config --global user.email "santhosh.piduri@gmail.com" | 
-        git config --global user.name "Venkata-Santhosh"
+        'git config --global user.email "santhosh.piduri@gmail.com" | 
+        git config --global user.name "Venkata-Santhosh"'
       - checkout
       - add_ssh_keys:
           fingerprints:
