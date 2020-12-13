@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: 
           command: |
-            git config --global user.email "santhosh.piduri@gmail.com"|
+            git config --global user.email "santhosh.piduri@gmail.com"
             git config --global user.name "Venkata-Santhosh"
       - checkout
       - add_ssh_keys:
