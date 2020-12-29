@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@font-face {
+  font-weight: normal;
+  font-display: swap;
+  font-family: "Adinda Melia";
+  src: url("https://dineshbalaji.in/fonts/adinda-melia.regular.otf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: col;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-width: 300px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: center;
   color: white;
+  background-color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.info-container h1 {
+  font-size: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.info-container h1 span {
+  margin-left: 20px;
+  font-family: "Adinda Melia";
+  color: #f7457f;
+  font-size: 2rem;
+}
+@media screen and (min-width: 762px) {
+  .info-container h1 span {
+    font-size: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+.info-container div {
+  width: 100%;
+}
+.info-container div a {
+  font-family: "Fontawesome";
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+}
+.info-container div a i {
+  font-size: 20px;
+  font-style: normal;
+}
+
+@media screen and (min-width: 762px) {
+  .info-container {
+    min-width: 500px;
+  }
+  .info-container h1 {
+    font-size: 20px;
+  }
+  .info-container h1 span {
+    font-size: 50px;
+  }
+  .info-container div a {
+    padding: 10px;
+  }
+  .info-container div a i {
+    font-size: 25px;
   }
 }
