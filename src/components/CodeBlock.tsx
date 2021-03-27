@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -9,9 +8,9 @@ interface CodeBlockPropType {
 }
 class CodeBlock extends PureComponent<CodeBlockPropType> {
   
-  static defaultProps = {
-    language: null
-  };
+  // static defaultProps = {
+    // language: null
+  // };
 
   render() {
     const { language, value } = this.props;

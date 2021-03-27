@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useActions } from "../hooks/useActions";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 import ReactMarkdown from 'react-markdown'
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+// import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import CodeBlock from "../components/CodeBlock";
 import gfm from 'remark-gfm'
 
@@ -14,6 +14,7 @@ const BlogContainer:React.FC = ()=> {
     
     useEffect(()=> {
         fetchBlogActionCreator();
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     const {loading, error, markdowns} = useTypedSelector((state)=> state.blogs);
