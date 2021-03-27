@@ -14,7 +14,7 @@ export const fetchBlogActionCreator = () => {
 
 
         
-        const {data} = await axios.get('/my-work/git.md')
+        const {data} = await axios.get('https://raw.githubusercontent.com/Venkata-Santhosh/my-blog/master/posts/multiple-git-accounts.md')
       //  fs.readdirSync("posts");
        //const files = fs.readdirSync ("posts");
         //console.log(files);
