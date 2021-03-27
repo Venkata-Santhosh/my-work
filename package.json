@@ -25,7 +25,7 @@
     "typescript": "^4.2.3",
     "web-vitals": "^0.2.4"
   },
-  "proxy":"https://github.com/Venkata-Santhosh/my-blog/tree/master",
+  "proxy": "https://github.com/Venkata-Santhosh/my-blog/tree/master",
   "homepage": "http://venkata-santhosh.github.io/my-work",
   "scripts": {
     "start": "react-scripts start",
@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "http-proxy-middleware": "^1.0.6"
   }
 }
